@@ -156,8 +156,8 @@ VRRP was configured to provide redundant default gateways across multiple VLANs.
 
 ### Before Failover
 
-![VRRP before failover](images/verification/vrrp-before-failover-r1-r2.png)
+![VRRP before failover](images/vrrp-before-failover-r1-r2.png)
 
 ### After Failover
 
-![VRRP after failover](images/verification/vrrp-after-failover.png)
+![VRRP after failover](images/vrrp-after-failover.png.png)
