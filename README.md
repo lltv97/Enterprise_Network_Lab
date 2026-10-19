@@ -9,6 +9,9 @@
 This project simulates a small enterprise network with multiple VLANs, redundant gateways, redundant WAN paths, and an internal web server. It was built as a hands-on learning project while preparing for Cisco CCNA and practicing network troubleshooting.
 
 The lab focuses on configuration and verification rather than production deployment.
+## Network Topology
+
+![Enterprise Network Topology](images/enterprise-network-topology.png)
 
 ## 2. Objectives
 
