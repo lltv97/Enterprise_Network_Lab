@@ -164,4 +164,4 @@ IP SLA monitors reachability to `8.8.8.8`. When the primary path through ISP1 be
 
 **Before and after failover**
 
-![WAN failover using IP SLA](images/wan-failover-ip-sla-before-after.png)
+![WAN failover using IP SLA](images/wan-failover-ip-sla-afer.png)
