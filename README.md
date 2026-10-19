@@ -34,6 +34,24 @@ The lab focuses on configuration and verification rather than production deploym
 - Tested WAN failover using IP SLA and floating static routes.
 - Used Cisco `show` commands and ACL counters to troubleshoot connectivity.
 
+  ## Troubleshooting Experience
+
+- **VRRP Failover:** Verified gateway availability after changing the active router state.
+- **WAN Failover:** Simulated primary ISP failure and verified backup routing using IP SLA and floating static routes.
+- **ACL Troubleshooting:** Used ACL hit counters and connectivity tests to identify permitted and denied traffic.
+- **Server Connectivity:** Verified HTTP access to the Ubuntu Nginx server and investigated routing and access-control issues.
+- **Return-Path Analysis:** Learned to check both forward and return traffic paths when troubleshooting connectivity across VLANs.
+
+## Tools and Technologies
+
+- Cisco IOS
+- PNETLab
+- Ubuntu Server 24.04
+- Nginx
+- VLAN, VTP, 802.1Q trunking, LACP
+- VRRP, OSPF, static routing, IP SLA
+- DHCP, Extended ACLs
+
 ## 2. Objectives
 
 - Segment users and servers into separate VLANs.
