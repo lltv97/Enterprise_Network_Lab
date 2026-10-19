@@ -13,6 +13,27 @@ The lab focuses on configuration and verification rather than production deploym
 
 ![Enterprise Network Topology](images/enterprise-network-topology.png)
 
+## Key Implementations
+
+- **VLANs and Inter-VLAN Routing:** Segmented the network into Accounting, HR, IT, Guest, and Server VLANs.
+- **VTP and Trunking:** Configured VLAN propagation and trunk links between switches.
+- **EtherChannel:** Bundled switch links using LACP for link redundancy.
+- **VRRP:** Configured redundant default gateways across VLANs.
+- **Routing:** Implemented static routing and OSPF.
+- **WAN Redundancy:** Configured dual ISP paths, floating static routes, IP SLA, and object tracking.
+- **DHCP:** Configured dynamic IP address assignment for user VLANs.
+- **Extended ACLs:** Restricted inter-VLAN traffic and controlled access to the internal web server.
+- **Linux Web Server:** Deployed Ubuntu Server 24.04 with Nginx.
+
+## Testing and Verification
+
+- Verified DHCP address assignment for client VLANs.
+- Tested inter-VLAN access policies using ping and TCP port checks.
+- Verified HTTP access to the internal web server on TCP port 80.
+- Tested VRRP gateway failover.
+- Tested WAN failover using IP SLA and floating static routes.
+- Used Cisco `show` commands and ACL counters to troubleshoot connectivity.
+
 ## 2. Objectives
 
 - Segment users and servers into separate VLANs.
