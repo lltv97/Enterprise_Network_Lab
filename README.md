@@ -143,3 +143,21 @@ Add your own screenshots before publishing:
 ## 10. Disclaimer
 
 All addresses, devices, and services in this repository are used for an isolated educational lab. Do not upload passwords, private keys, real customer configurations, or sensitive information.
+
+## VRRP Gateway Redundancy Verification
+
+VRRP was configured to provide redundant default gateways across multiple VLANs.
+
+**Test scenario:** The R1 subinterface for VLAN 10 was shut down to simulate an interface failure.
+
+**Expected result:** R2 transitions from Backup to Master for VLAN 10 while retaining the virtual gateway address `192.168.10.1`.
+
+**Result:** Successful. The `show vrrp brief` output confirmed that R2 became Master for VLAN 10.
+
+### Before Failover
+
+![VRRP before failover](images/verification/vrrp-before-failover-r1-r2.png)
+
+### After Failover
+
+![VRRP after failover](images/verification/vrrp-after-failover.png)
