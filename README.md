@@ -156,7 +156,7 @@ This test verifies that R2 takes over as the Master gateway for VLAN 10 when the
 
 **After failover — R2 becomes Master for VLAN 10**
 
-![VRRP after failover](images/vrrp-after-failover.png)
+![VRRP after failover](images/vrrp-after-failover.png.png)
 
 ### 2. WAN Failover Using IP SLA
 
