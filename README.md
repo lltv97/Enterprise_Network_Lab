@@ -34,7 +34,7 @@ The lab focuses on configuration and verification rather than production deploym
 - Tested WAN failover using IP SLA and floating static routes.
 - Used Cisco `show` commands and ACL counters to troubleshoot connectivity.
 
-  ## Troubleshooting Experience
+## Troubleshooting Experience
 
 - **VRRP Failover:** Verified gateway availability after changing the active router state.
 - **WAN Failover:** Simulated primary ISP failure and verified backup routing using IP SLA and floating static routes.
