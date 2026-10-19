@@ -144,20 +144,24 @@ Add your own screenshots before publishing:
 
 All addresses, devices, and services in this repository are used for an isolated educational lab. Do not upload passwords, private keys, real customer configurations, or sensitive information.
 
-## VRRP Gateway Redundancy Verification
+## Network Failover Verification
 
-VRRP was configured to provide redundant default gateways across multiple VLANs.
+### 1. VRRP Gateway Redundancy
 
-**Test scenario:** The R1 subinterface for VLAN 10 was shut down to simulate an interface failure.
+This test verifies that R2 takes over as the Master gateway for VLAN 10 when the R1 VLAN 10 subinterface goes down.
 
-**Expected result:** R2 transitions from Backup to Master for VLAN 10 while retaining the virtual gateway address `192.168.10.1`.
-
-**Result:** Successful. The `show vrrp brief` output confirmed that R2 became Master for VLAN 10.
-
-### Before Failover
+**Before failover — R1 and R2**
 
 ![VRRP before failover](images/vrrp-before-failover-r1-r2.png)
 
-### After Failover
+**After failover — R2 becomes Master for VLAN 10**
 
-![VRRP after failover](images/vrrp-after-failover.png.png)
+![VRRP after failover](images/vrrp-after-failover.png)
+
+### 2. WAN Failover Using IP SLA
+
+IP SLA monitors reachability to `8.8.8.8`. When the primary path through ISP1 becomes unavailable, R1 selects the floating static route through R2.
+
+**Before and after failover**
+
+![WAN failover using IP SLA](images/wan-failover-ip-sla-before-after.png)
